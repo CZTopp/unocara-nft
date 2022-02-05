@@ -1,10 +1,26 @@
-# Basic Sample Hardhat Project
+This project was started by following this tutorial: https://dev.to/rounakbanik/writing-an-nft-collectible-smart-contract-2nh8
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+I add the eip2981 standard for royalties found here: https://github.com/dievardump/EIP2981-implementation
 
-Try running some of the following tasks:
+# NFT Collection Contract
 
-```shell
+This project demonstrates an nft contract that adds royalties.
+Note: this is not a boilerplate.
+Note: This is not a production ready contract. Use at your own risk.
+
+```sh
+git clone https://github.com/CZTopp/unocara-nft
+cd unocara-nft
+npm install
+```
+
+Try running the tests:
+
+```sh
+npx hardhat test
+```
+
+```sh
 npx hardhat accounts
 npx hardhat compile
 npx hardhat clean
@@ -12,4 +28,10 @@ npx hardhat test
 npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
+```
+
+try running the contract
+
+```sh
+npx hardhat run scripts/run.js --network localhost
 ```

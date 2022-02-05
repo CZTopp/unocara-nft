@@ -65,16 +65,5 @@ describe('UnoCara', () => {
             expect(info[1].toNumber()).to.be.equal(5000);
             expect(info[0]).to.be.equal(ADDRESS_ZERO);
         });
-        it('can burn a token by id', async function () {
-            await unoCara.setRoyalties(ADDRESS_ZERO, 5000);
-
-            await unoCara.mint(deployer.address, {
-                value: utils.parseEther('0.18'),
-            });
-            const tokenBalance = await unoCara.balanceOf(deployer.address);
-            expect(tokenBalance).to.be.equal(1);
-            await unoCara.burn(0);
-            expect(tokenBalance).to.be.equal(1);
-        });
     });
 });
