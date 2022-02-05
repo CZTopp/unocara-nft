@@ -17,7 +17,7 @@ async function main() {
     // Get contract address
     console.log('Contract deployed to:', contract.address);
     console.log('Contract owner:', owner.address);
-    contract._burn();
+
     // set royalties
     await contract.setRoyalties(owner.address, 1800);
 
