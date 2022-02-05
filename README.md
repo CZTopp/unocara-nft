@@ -6,7 +6,7 @@ I add the eip2981 standard for royalties found here: https://github.com/dievardu
 
 This project demonstrates an nft contract that adds eip-2981 royalty standard.
 
-Note: this is not a boilerplate, and is probably not a production ready contract. I just wanted to add some royalties to first nft.
+Note: this is not a boilerplate, and is probably not a production ready contract. I just wanted to add some royalties to my first nft.
 
 ```sh
 git clone https://github.com/CZTopp/unocara-nft
