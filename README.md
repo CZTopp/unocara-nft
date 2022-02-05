@@ -25,9 +25,3 @@ try running the contract
 ```sh
 npx hardhat run scripts/run.js --network localhost
 ```
-
-try running the contract
-
-```sh
-npx hardhat run scripts/run.js --network localhost
-```
