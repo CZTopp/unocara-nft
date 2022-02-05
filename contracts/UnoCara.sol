@@ -23,18 +23,6 @@ contract UnoCara is ERC721, ERC2981ContractWideRoyalties, Ownable {
     // uint256 nextTokenId;
     Counters.Counter private _tokenIds;
 
-    /// TODO
-    /// @notice temporariliy set nft price to zero for tests
-    /// Add imports and add ownable to contract - tests pass
-    /// refactor token id - tests pass
-    /// make setroyalties onlyowner - tests pass
-    /// make minting functions payable - tests pass
-    /// add pay for nft in mint function - tests pass
-    /// add base uri funcs - tests pass*
-    /// add dotenv api and address
-    /// add reserve nfts function - tests pass
-    /// refactor deploy script
-
     constructor(string memory baseURI) ERC721('UnoCara', 'CARA') {
         setBaseURI(baseURI);
     }
