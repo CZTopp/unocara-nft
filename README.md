@@ -4,9 +4,9 @@ I add the eip2981 standard for royalties found here: https://github.com/dievardu
 
 # NFT Collection Contract
 
-This project demonstrates an nft contract that adds royalties.
-Note: this is not a boilerplate.
-Note: This is not a production ready contract. Use at your own risk.
+This project demonstrates an nft contract that adds eip-2981 royalty standard.
+
+Note: this is not a boilerplate, and is probably not a production ready contract. I just wanted to add some royalties to first nft.
 
 ```sh
 git clone https://github.com/CZTopp/unocara-nft
@@ -20,14 +20,10 @@ Try running the tests:
 npx hardhat test
 ```
 
+try running the contract
+
 ```sh
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+npx hardhat run scripts/run.js --network localhost
 ```
 
 try running the contract
