@@ -9,8 +9,8 @@ import './eip2981/ERC2981ContractWideRoyalties.sol';
 import 'hardhat/console.sol';
 
 /// @title Example of ERC721 contract with ERC2981
-/// @author Simon Fremaux (@dievardump)
-/// @notice This is a mock, mint and mintBatch are not protected. Please do not use as-is in production
+/// @author @czshows
+/// @notice Not production ready
 contract UnoCara is ERC721, ERC2981ContractWideRoyalties, Ownable {
     using SafeMath for uint256;
     using Counters for Counters.Counter;
