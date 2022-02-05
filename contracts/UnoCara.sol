@@ -16,7 +16,7 @@ contract UnoCara is ERC721, ERC2981ContractWideRoyalties, Ownable {
     using Counters for Counters.Counter;
 
     uint256 public constant MAX_SUPPLY = 10000;
-    uint256 public constant PRICE = 0.18 ether;
+    uint256 public constant PRICE = 0.018 ether;
     uint256 public constant MAX_PER_MINT = 5;
     string public baseTokenURI;
 
@@ -54,8 +54,14 @@ contract UnoCara is ERC721, ERC2981ContractWideRoyalties, Ownable {
         uint256 totalMinted = _tokenIds.current();
         require(totalMinted.add(10) < MAX_SUPPLY, 'Not enough NFTs');
         for (uint256 i = 0; i < 10; i++) {
-            mint(msg.sender);
+            _mintReserveNFT();
         }
+    }
+
+    function _mintReserveNFT() private {
+        uint256 newTokenID = _tokenIds.current();
+        _safeMint(msg.sender, newTokenID);
+        _tokenIds.increment();
     }
 
     /// @notice Mint one token to `to`
